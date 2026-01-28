@@ -19,7 +19,7 @@ enum House {
     }
 }
 
-public class EnumDemo {
+class Question1 {
     public static void main(String[] args) {
 
         for (House h : House.values()) {

@@ -5,25 +5,62 @@
 import java.util.Stack;
 
 public class Question3 {
+    public static void main(String[] args) {
+        SpecialStack s = new SpecialStack();
+        s.push(10);
+        s.push(20);
+        s.push(5);
+        s.push(15);
+
+        System.out.println("Minimum element: " + s.getMin());
+
+        s.pop();
+        System.out.println("Minimum element after popping: " + s.getMin());
+
+        s.pop();
+        System.out.println("Minimum element after popping: " + s.getMin());
+    }
     
 }
 class SpecialStack extends Stack {
-    Stack minStack;
-    private int min = Math.MAX_VALUE;
+    private Stack<Integer> mainStack;
+    private Stack<Integer> minStack;
 
-    SpecialStack() {
-        minStack = new Stack();
+    public SpecialStack() {
+        mainStack = new Stack<>();
+        minStack = new Stack<>();
     }
 
-    void push(int x){
-        minStack.push(int x);
-        if(x < min){
-            min = x;
+    public void push(int x) {
+        mainStack.push(x);
+        if (minStack.isEmpty() || x <= minStack.peek()) {
+            minStack.push(x);
+        } else {
+            minStack.push(minStack.peek());
         }
     }
 
-    void pop(){
-        
+    public Integer pop() {
+        if (mainStack.isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        minStack.pop();
+        return mainStack.pop();
     }
 
+    public int getMin() {
+        if (minStack.isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        return minStack.peek();
+    }
+
+    public boolean isEmpty() {
+        return mainStack.isEmpty();
+    }
+
+    public boolean isFull() {
+        // Stack in Java is dynamically sized
+        return false;
+    }
 }

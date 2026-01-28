@@ -1,0 +1,5 @@
+hello world
+this is a sample file
+hello java
+java is powerful
+hello world hello
