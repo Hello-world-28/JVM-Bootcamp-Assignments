@@ -1,29 +1,27 @@
 //Write a program to display values of enums using a constructor & getPrice() method (Example display house & their prices)
 
-enum House {
-    APARTMENT(3000000),
-    VILLA(8000000),
-    BUNGALOW(12000000),
-    COTTAGE(4500000);
+enum HOUSE {
+    ONE_BHK(2500),
+    TWO_BHK(5000),
+    THREE_BHK(7500);
 
     private int price;
 
-    // enum constructor
-    House(int price) {
+    //constructor
+    HOUSE(int price) {
         this.price = price;
     }
 
-    // getter method
+    //getter method
     public int getPrice() {
-        return price;
+        return this.price;
     }
 }
 
 class Question1 {
     public static void main(String[] args) {
-
-        for (House h : House.values()) {
-            System.out.println(h + " price = " + h.getPrice());
+        for (HOUSE house : HOUSE.values()) {
+            System.out.println(house + " price: " + house.getPrice());
         }
     }
 }
