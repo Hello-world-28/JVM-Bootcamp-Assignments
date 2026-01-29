@@ -11,9 +11,12 @@ class Question10{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first date (YYYY-MM-DD): ");
-        String firstDateInput = sc.nextLine();
+        String date1Str = sc.nextLine();
         System.out.println("Enter second date (YYYY-MM-DD): ");
-        String secondDateInput = sc.nextLine();
+        String date2Str = sc.nextLine();
+
+        LocalDate date1 = LocalDate.parse(date1Str);
+        LocalDate date2 = LocalDate.parse(date2Str);
 
         if (date1.isBefore(date2)) {
             System.out.println("First date occurs before second date");
