@@ -1,0 +1,4 @@
+Source: https://mvnrepository.com/artifact/org.springframework/spring-core
+https://repository.apache.org/snapshots/
+https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+
