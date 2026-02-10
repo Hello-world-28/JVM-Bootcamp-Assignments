@@ -1,22 +1,37 @@
-//Write a code to simulate a deadlock in java
-class Thread1 implements Runnable{
-    @Override
-    public void run(){
-        System.out.println("Child Thread Starts");
-        try{
-            Main.a.join();
-        }catch(InterruptedException e){}
-    }
-}
-class Main{
-    static Thread a; 
-    public static void main(String[] args){
-        a = Thread.currentThread();
-        System.out.println("Main Thread Starts");
-        Thread t = new Thread(new Thread1());
-        t.start();
-        try{
-            Main.a.join();
-        }catch(InterruptedException e){}
+// Write a code to simulate a deadlock in Java
+
+class DeadlockDemo {
+
+    static final Object lock1 = new Object();
+    static final Object lock2 = new Object();
+
+    public static void main(String[] args) {
+
+        Thread t1 = new Thread(() -> {
+            synchronized (lock1) {
+                System.out.println("Thread 1 acquired lock1");
+
+                try { Thread.sleep(100); } catch (InterruptedException e) {}
+
+                synchronized (lock2) {
+                    System.out.println("Thread 1 acquired lock2");
+                }
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            synchronized (lock2) {
+                System.out.println("Thread 2 acquired lock2");
+
+                try { Thread.sleep(100); } catch (InterruptedException e) {}
+
+                synchronized (lock1) {
+                    System.out.println("Thread 2 acquired lock1");
+                }
+            }
+        });
+
+        t1.start();
+        t2.start();
     }
 }
