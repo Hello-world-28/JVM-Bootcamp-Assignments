@@ -1,10 +1,25 @@
-import java.util.Optional;
-import java.util.stream.Stream;
+//Use Of method to create List, Set and Map
+import java.util.*;
 
-class Question2{
-    public static void main(String[] args){
-        Optional<String> opt = Optional.of("My name is Saurabh");
-        Stream<String> str = opt.stream();
-        str.forEach(System.out::println);
+public class Question2 {
+    public static void main(String[] args) {
+
+        // List.of()
+        List<String> fruits = List.of("apple", "banana", "orange");
+        System.out.println(fruits);
+
+        // Set.of()
+        Set<String> colors = Set.of("red", "green", "blue");
+        System.out.println(colors);
+
+        // Map.of()
+        Map<String, Integer> scores =
+            Map.of(
+                "Alice", 90,
+                "Bob", 85,
+                "Carol", 92
+            );
+        System.out.println(scores);
+
     }
 }
