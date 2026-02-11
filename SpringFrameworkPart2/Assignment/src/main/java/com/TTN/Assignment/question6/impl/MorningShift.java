@@ -1,10 +1,10 @@
-package com.TTN.Assignment.question3.impl;
+package com.TTN.Assignment.question6.impl;
 
-import com.TTN.Assignment.question3.interfaces.Competency;
+import com.TTN.Assignment.question6.interfaces.Competency;
 import org.springframework.stereotype.Component;
 
 @Component
-public class zone implements Competency {
+public class JavaCompetency implements Competency {
 
     @Override
     public void show() {
