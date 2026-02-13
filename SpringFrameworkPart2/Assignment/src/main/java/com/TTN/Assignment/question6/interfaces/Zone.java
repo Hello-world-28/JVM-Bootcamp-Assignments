@@ -1,4 +1,5 @@
 package com.TTN.Assignment.question6.interfaces;
 
-public class c {
+public interface Zone {
+    void show();
 }

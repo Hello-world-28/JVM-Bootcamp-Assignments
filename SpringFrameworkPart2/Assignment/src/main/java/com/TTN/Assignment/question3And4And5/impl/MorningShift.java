@@ -1,6 +1,6 @@
-package com.TTN.Assignment.question3And4.impl;
+package com.TTN.Assignment.question3And4And5.impl;
 
-import com.TTN.Assignment.question3And4.interfaces.Shift;
+import com.TTN.Assignment.question3And4And5.interfaces.Shift;
 import org.springframework.stereotype.Component;
 
 @Component

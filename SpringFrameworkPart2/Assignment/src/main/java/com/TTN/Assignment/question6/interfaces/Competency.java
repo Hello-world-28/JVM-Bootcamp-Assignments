@@ -1,4 +1,5 @@
 package com.TTN.Assignment.question6.interfaces;
 
-public class a {
+public interface Competency {
+    void show();
 }

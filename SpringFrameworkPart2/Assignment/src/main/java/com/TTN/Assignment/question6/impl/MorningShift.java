@@ -1,13 +1,13 @@
 package com.TTN.Assignment.question6.impl;
 
-import com.TTN.Assignment.question6.interfaces.Competency;
+import com.TTN.Assignment.question6.interfaces.Shift;
 import org.springframework.stereotype.Component;
 
 @Component
-public class JavaCompetency implements Competency {
+public class MorningShift implements Shift {
 
     @Override
     public void show() {
-        System.out.println("Competency: Java");
+        System.out.println("Shift: Morning");
     }
 }

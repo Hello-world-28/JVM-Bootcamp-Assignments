@@ -1,4 +1,5 @@
 package com.TTN.Assignment.question6.interfaces;
 
-public class b {
+public interface Shift {
+    void show();
 }

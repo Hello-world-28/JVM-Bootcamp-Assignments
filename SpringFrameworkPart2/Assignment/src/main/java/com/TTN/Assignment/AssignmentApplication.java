@@ -4,6 +4,8 @@ import com.TTN.Assignment.TTNComponent.*;
 import com.TTN.Assignment.TTNComponentLooseCoupling.TTNInterfaces.CompetencyInterface;
 import com.TTN.Assignment.TTNComponentLooseCoupling.TTNInterfaces.ShiftInterface;
 import com.TTN.Assignment.TTNComponentLooseCoupling.TTNInterfaces.ZoneInterface;
+import com.TTN.Assignment.question3And4And5.TTN;
+import com.TTN.Assignment.question6.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.TTN.Assignment.TTNComponentLooseCoupling.*;
@@ -35,6 +37,27 @@ public class AssignmentApplication {
 
 		TTNLooseCoupling t1 = new TTNLooseCoupling(competency, shift, zone);
 		t1.showDetails();
+
+
+		var context = SpringApplication.run(AssignmentApplication.class, args);
+
+		System.out.println("========== Question 3 ==========");
+
+		TTN ttnQ3 = context.getBean(TTN.class);
+		ttnQ3.displayProperties();
+
+		System.out.println("========== Question 4 ==========");
+
+		TTN ttnBean = context.getBean(TTN.class);
+		ttnBean.displayProperties();
+
+		System.out.println("========== Question 6 ==========");
+		System.out.println("Used @Primary and @Qualifier");
+
+		System.out.println("========== Question 6 ==========");
+
+		com.TTN.Assignment.question6.TTN ttnQ6 = context.getBean(com.TTN.Assignment.question6.TTN.class);
+		ttnQ6.display();
 
 	}
 
