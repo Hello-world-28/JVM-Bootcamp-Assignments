@@ -1,10 +1,17 @@
 package com.Bootcamp.RESTfulWebservices.model;
+import com.fasterxml.jackson.annotation.JsonFilter;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.jspecify.annotations.NonNull;
 
-//@XmlRootElement
+@XmlRootElement
+@JsonFilter("UserFilter")
 public class User {
     private Integer id;
     private String name;
     private Integer age;
+    @JsonIgnore
+    private String password;
 
     public Integer getId() {
         return id;
