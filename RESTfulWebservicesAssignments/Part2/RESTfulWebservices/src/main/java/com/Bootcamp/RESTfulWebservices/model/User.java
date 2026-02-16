@@ -2,7 +2,6 @@ package com.Bootcamp.RESTfulWebservices.model;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.jspecify.annotations.NonNull;
 
 @XmlRootElement
 @JsonFilter("UserFilter")
@@ -37,5 +36,11 @@ public class User {
         this.age = age;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
