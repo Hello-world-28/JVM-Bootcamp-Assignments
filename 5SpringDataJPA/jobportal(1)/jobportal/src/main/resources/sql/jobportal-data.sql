@@ -1,62 +1,60 @@
-INSERT INTO companies
-(name, logo, industry, size, rating, locations, founded, description, employees, website, created_by)
-VALUES
-    ('TechNova Solutions', 'https://logo.com/technova.png', 'Technology', '201-500', 4.50, 'New York, USA', 2012, 'Cloud and AI solutions provider', 350, 'https://technova.com', 'admin'),
+-- Insert company data
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('TechCorp Inc.', '/logos/techcorp.png', 'Technology', 'Large', 4.5, 'San Francisco,New York,Austin', 2010, 'TechCorp Inc. is a leading technology company founded in 2010. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 15000, 'https://www.techcorpinc.com', 'SYSTEM');
 
-    ('HealthBridge', 'https://logo.com/healthbridge.png', 'Healthcare', '51-200', 4.20, 'Chicago, USA', 2015, 'Digital healthcare platform', 120, 'https://healthbridge.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Google', '/logos/google.png', 'Technology', 'Large', 4.4, 'Mountain View,New York,Seattle', 1998, 'Google is a leading technology company founded in 1998. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 156000, 'https://www.google.com', 'SYSTEM');
 
-    ('FinEdge Corp', 'https://logo.com/finedge.png', 'Finance', '501-1000', 4.70, 'London, UK', 2008, 'Investment and fintech services', 780, 'https://finedge.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Microsoft', '/logos/microsoft.png', 'Technology', 'Large', 4.4, 'Redmond,San Francisco,Austin', 1975, 'Microsoft is a leading technology company founded in 1975. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 221000, 'https://www.microsoft.com', 'SYSTEM');
 
-    ('EduSmart', 'https://logo.com/edusmart.png', 'Education', '11-50', 4.10, 'Boston, USA', 2018, 'Online learning solutions', 40, 'https://edusmart.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Apple', '/logos/apple.png', 'Technology', 'Large', 4.6, 'Cupertino,Austin,Boston', 1976, 'Apple is a leading technology company founded in 1976. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 164000, 'https://www.apple.com', 'SYSTEM');
 
-    ('GreenFuture Energy', 'https://logo.com/greenfuture.png', 'Energy', '1001-5000', 4.80, 'Berlin, Germany', 2000, 'Renewable energy provider', 2300, 'https://greenfuture.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Amazon', '/logos/amazon.png', 'E-commerce', 'Large', 4.2, 'Seattle,New York,Austin', 1994, 'Amazon is a leading e-commerce company founded in 1994. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 1540000, 'https://www.amazon.com', 'SYSTEM');
 
-    ('RetailSphere', 'https://logo.com/retailsphere.png', 'Retail', '201-500', 4.00, 'San Francisco, USA', 2011, 'E-commerce retail chain', 410, 'https://retailsphere.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Tesla', '/logos/tesla.png', 'Automotive', 'Large', 4.3, 'Palo Alto,Austin,Berlin', 2003, 'Tesla is a leading automotive company founded in 2003. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 127855, 'https://www.tesla.com', 'SYSTEM');
 
-    ('AutoDrive', 'https://logo.com/autodrive.png', 'Automotive', '5001-10000', 4.60, 'Tokyo, Japan', 1995, 'Autonomous vehicle manufacturer', 6800, 'https://autodrive.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Netflix', '/logos/netflix.png', 'Entertainment', 'Large', 4.7, 'Los Gatos,Los Angeles,New York', 1997, 'Netflix is a leading entertainment company founded in 1997. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 12800, 'https://www.netflix.com', 'SYSTEM');
 
-    ('FoodNest', 'https://logo.com/foodnest.png', 'Food & Beverage', '51-200', 4.30, 'Paris, France', 2016, 'Organic food delivery service', 150, 'https://foodnest.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Meta', '/logos/meta.png', 'Technology', 'Large', 4.1, 'Menlo Park,Austin,London', 2004, 'Meta is a leading technology company founded in 2004. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 86482, 'https://www.meta.com', 'SYSTEM');
 
-    ('TravelMate', 'https://logo.com/travelmate.png', 'Travel', '201-500', 4.25, 'Dubai, UAE', 2013, 'Travel booking platform', 380, 'https://travelmate.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Spotify', '/logos/spotify.png', 'Music', 'Medium', 4.5, 'Stockholm,New York,Los Angeles', 2006, 'Spotify is a leading music company founded in 2006. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 9800, 'https://www.spotify.com', 'SYSTEM');
 
-    ('SecureNet', 'https://logo.com/securenet.png', 'Cybersecurity', '51-200', 4.65, 'Austin, USA', 2014, 'Enterprise security solutions', 180, 'https://securenet.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Airbnb', '/logos/airbnb.png', 'Travel', 'Medium', 4.4, 'San Francisco,Portland,Dublin', 2008, 'Airbnb is a leading travel company founded in 2008. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 6800, 'https://www.airbnb.com', 'SYSTEM');
 
-    ('BuildCore', 'https://logo.com/buildcore.png', 'Construction', '1001-5000', 4.10, 'Sydney, Australia', 1998, 'Infrastructure development company', 2500, 'https://buildcore.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Uber', '/logos/uber.png', 'Transportation', 'Large', 4.0, 'San Francisco,New York,Amsterdam', 2009, 'Uber is a leading transportation company founded in 2009. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 32800, 'https://www.uber.com', 'SYSTEM');
 
-    ('MedicoPlus', 'https://logo.com/medicoplus.png', 'Healthcare', '201-500', 4.35, 'Toronto, Canada', 2009, 'Medical equipment supplier', 320, 'https://medicoplus.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Slack', '/logos/slack.png', 'Technology', 'Medium', 4.6, 'San Francisco,New York,Toronto', 2009, 'Slack is a leading technology company founded in 2009. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 2500, 'https://www.slack.com', 'SYSTEM');
 
-    ('SkyHigh Airlines', 'https://logo.com/skyhigh.png', 'Aviation', '10001+', 4.55, 'Singapore', 1985, 'International airline company', 15000, 'https://skyhigh.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Zoom', '/logos/zoom.svg', 'Technology', 'Medium', 4.5, 'San Jose,Austin,Singapore', 2011, 'Zoom is a leading technology company founded in 2011. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 7400, 'https://www.zoom.us', 'SYSTEM');
 
-    ('NextGen Robotics', 'https://logo.com/nextgen.png', 'Robotics', '51-200', 4.75, 'Seoul, South Korea', 2017, 'Industrial robotics manufacturer', 140, 'https://nextgenrobotics.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Shopify', '/logos/shopify.png', 'E-commerce', 'Medium', 4.3, 'Ottawa,Toronto,San Francisco', 2006, 'Shopify is a leading e-commerce company founded in 2006. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 10000, 'https://www.shopify.com', 'SYSTEM');
 
-    ('UrbanHomes', 'https://logo.com/urbanhomes.png', 'Real Estate', '201-500', 4.20, 'Los Angeles, USA', 2010, 'Residential real estate developer', 390, 'https://urbanhomes.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Square', '/logos/square.png', 'Fintech', 'Medium', 4.2, 'San Francisco,Atlanta,New York', 2009, 'Square is a leading fintech company founded in 2009. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 8000, 'https://www.squareup.com', 'SYSTEM');
 
-    ('AquaPure', 'https://logo.com/aquapure.png', 'Water Technology', '11-50', 4.15, 'Amsterdam, Netherlands', 2019, 'Water purification systems', 30, 'https://aquapure.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Stripe', '/logos/stripe.png', 'Fintech', 'Medium', 4.7, 'San Francisco,New York,London', 2010, 'Stripe is a leading fintech company founded in 2010. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 8000, 'https://www.stripe.com', 'SYSTEM');
 
-    ('CloudMatrix', 'https://logo.com/cloudmatrix.png', 'Technology', '501-1000', 4.60, 'Seattle, USA', 2007, 'Enterprise cloud infrastructure', 900, 'https://cloudmatrix.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Coinbase', '/logos/coinbase.png', 'Cryptocurrency', 'Medium', 4.1, 'San Francisco,New York,London', 2012, 'Coinbase is a leading cryptocurrency company founded in 2012. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 4700, 'https://www.coinbase.com', 'SYSTEM');
 
-    ('GameSphere', 'https://logo.com/gamesphere.png', 'Gaming', '201-500', 4.45, 'Montreal, Canada', 2012, 'Game development studio', 360, 'https://gamesphere.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Twilio', '/logos/twilio.png', 'Technology', 'Medium', 4.3, 'San Francisco,Denver,London', 2008, 'Twilio is a leading technology company founded in 2008. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 9100, 'https://www.twilio.com', 'SYSTEM');
 
-    ('AgroLife', 'https://logo.com/agrolife.png', 'Agriculture', '51-200', 4.05, 'Nairobi, Kenya', 2014, 'Smart farming solutions', 110, 'https://agrolife.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('GitHub', '/logos/github.png', 'Technology', 'Medium', 4.5, 'San Francisco,Boston,Tokyo', 2008, 'GitHub is a leading technology company founded in 2008. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 3000, 'https://www.github.com', 'SYSTEM');
 
-    ('BioSynth', 'https://logo.com/biosynth.png', 'Biotechnology', '201-500', 4.50, 'Zurich, Switzerland', 2005, 'Biotech research firm', 420, 'https://biosynth.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Adobe', '/logos/adobe.svg', 'Technology', 'Large', 4.4, 'San Jose,Seattle,New York', 1982, 'Adobe is a leading technology company founded in 1982. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 29239, 'https://www.adobe.com', 'SYSTEM');
 
-    ('SmartWare', 'https://logo.com/smartware.png', 'Software', '501-1000', 4.40, 'Bangalore, India', 2003, 'Enterprise software provider', 870, 'https://smartware.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Salesforce', '/logos/salesforce.png', 'Technology', 'Large', 4.3, 'San Francisco,Indianapolis,London', 1999, 'Salesforce is a leading technology company founded in 1999. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 79390, 'https://www.salesforce.com', 'SYSTEM');
 
-    ('QuickLogix', 'https://logo.com/quicklogix.png', 'Logistics', '1001-5000', 4.30, 'Shanghai, China', 1999, 'Global logistics company', 3100, 'https://quicklogix.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Oracle', '/logos/oracle.png', 'Technology', 'Large', 4.0, 'Austin,Redwood City,Bangalore', 1977, 'Oracle is a leading technology company founded in 1977. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 164000, 'https://www.oracle.com', 'SYSTEM');
 
-    ('BrightAds', 'https://logo.com/brightads.png', 'Marketing', '51-200', 4.10, 'Madrid, Spain', 2016, 'Digital marketing agency', 130, 'https://brightads.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('IBM', '/logos/ibm.svg', 'Technology', 'Large', 4.1, 'Armonk,Austin,Bangalore', 1911, 'IBM is a leading technology company founded in 1911. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 282100, 'https://www.ibm.com', 'SYSTEM');
 
-    ('NanoTech Labs', 'https://logo.com/nanotech.png', 'Nanotechnology', '11-50', 4.60, 'Stockholm, Sweden', 2020, 'Advanced nanotech research', 25, 'https://nanotechlabs.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Intel', '/logos/intel.png', 'Technology', 'Large', 4.2, 'Santa Clara,Portland,Bangalore', 1968, 'Intel is a leading technology company founded in 1968. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 131900, 'https://www.intel.com', 'SYSTEM');
 
-    ('Oceanic Shipping', 'https://logo.com/oceanic.png', 'Shipping', '5001-10000', 4.35, 'Hong Kong', 1990, 'International shipping services', 7200, 'https://oceanicshipping.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('NVIDIA', '/logos/nvidia.png', 'Technology', 'Large', 4.6, 'Santa Clara,Austin,Tel Aviv', 1993, 'NVIDIA is a leading technology company founded in 1993. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 29600, 'https://www.nvidia.com', 'SYSTEM');
 
-    ('VisionAI', 'https://logo.com/visionai.png', 'Artificial Intelligence', '51-200', 4.85, 'San Jose, USA', 2018, 'Computer vision solutions', 160, 'https://visionai.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Palantir', '/logos/palantir.png', 'Technology', 'Medium', 4.2, 'Palo Alto,Denver,London', 2003, 'Palantir is a leading technology company founded in 2003. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 3838, 'https://www.palantir.com', 'SYSTEM');
 
-    ('EcoBuild', 'https://logo.com/ecobuild.png', 'Sustainability', '201-500', 4.20, 'Oslo, Norway', 2011, 'Eco friendly construction', 340, 'https://ecobuild.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Snowflake', '/logos/snowflake.png', 'Technology', 'Medium', 4.4, 'Bozeman,San Mateo,Bellevue', 2012, 'Snowflake is a leading technology company founded in 2012. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 6800, 'https://www.snowflake.com', 'SYSTEM');
 
-    ('PulseMedia', 'https://logo.com/pulsemedia.png', 'Media', '501-1000', 4.25, 'Los Angeles, USA', 2006, 'Digital media company', 650, 'https://pulsemedia.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Databricks', '/logos/databricks.png', 'Technology', 'Medium', 4.5, 'San Francisco,Amsterdam,Singapore', 2013, 'Databricks is a leading technology company founded in 2013. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 5000, 'https://www.databricks.com', 'SYSTEM');
 
-    ('CyberCore', 'https://logo.com/cybercore.png', 'Cybersecurity', '201-500', 4.55, 'Tel Aviv, Israel', 2013, 'Network security firm', 410, 'https://cybercore.com', 'admin'),
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Canva', '/logos/canva.png', 'Technology', 'Medium', 4.6, 'Sydney,San Francisco,London', 2012, 'Canva is a leading technology company founded in 2012. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 4000, 'https://www.canva.com', 'SYSTEM');
 
-    ('FutureWorks', 'https://logo.com/futureworks.png', 'Consulting', '1001-5000', 4.30, 'Mumbai, India', 2001, 'Business consulting firm', 2800, 'https://futureworks.com', 'admin');
+INSERT INTO companies (name, logo, industry, size, rating, locations, founded, description, employees, website, created_by) VALUES ('Figma', '/logos/figma.png', 'Technology', 'Medium', 4.7, 'San Francisco,New York,London', 2012, 'Figma is a leading technology company founded in 2012. We''re committed to innovation and creating exceptional experiences for our customers and employees.', 1000, 'https://www.figma.com', 'SYSTEM');
