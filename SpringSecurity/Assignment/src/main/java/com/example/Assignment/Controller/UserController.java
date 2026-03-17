@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
-    @RequestMapping(path="api/user", method = RequestMethod.GET)
+    @RequestMapping(path="/user", method = RequestMethod.GET)
     public ResponseEntity<String> userController(){
         return ResponseEntity.ok("User endpoint");
     }

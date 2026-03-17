@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AdminController {
-    @RequestMapping(path="api/admin", method=RequestMethod.GET)
+    @RequestMapping(path="/admin", method=RequestMethod.GET)
     public ResponseEntity<String> adminMethod(){
         return ResponseEntity.ok("Admin Method");
     }
